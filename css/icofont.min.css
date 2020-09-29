@@ -10,7 +10,7 @@
     font-family: IcoFont;
     font-weight: 400;
     font-style: Regular;
-    src: url(../fonts/icofont.woff2) format("woff2"), url(../fonts/icofont.woff) format("woff")
+    src: url(../fonts/icofont.woff2) format("woff2"), url(../fonts/icofont.woff) format("woff");
 }
 
 [class*=" icofont-"],
@@ -111,6 +111,10 @@
 
 .icofont-close:before {
     content: "\eee4"
+}
+
+.icofont-navigation-menu:before {
+    content: "\efa2"
 }
 
 .icofont-xs {
