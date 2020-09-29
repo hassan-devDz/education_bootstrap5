@@ -11,18 +11,18 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body data-spy="scroll">
 
     <!-- Navigation Block -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
+    <nav id="navbarNav" class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
         <div class=" container-md container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="icofont-navigation-menu"></i>
             </button>
-            <div class="navbar-collapse collapse " id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="navbar-collapse collapse ">
+                <ul class="navbar-nav" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#header">الرئيسية</a>
                     </li>
@@ -50,7 +50,8 @@
 
 
     <!-- Carousel -->
-    <section>
+
+    <section id="header">
         <div id="carousel-kafaa" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carousel-kafaa" data-slide-to="0" class="active"></li>
@@ -105,7 +106,7 @@
             </a>
         </div>
     </section>
-    <section id="about" class="about m-5">
+    <section id="about-list" class="about m-5">
         <div class="d-flex flex-column  container-md">
             <div class="d-flex flex-column  align-items-center">
                 <h2 class="display-6 mb-5">حولنا</h2>
@@ -169,6 +170,109 @@
 
 
     </section>
+    <section id="services" class="services m-5 py-5 py-4">
+        <div class="d-flex flex-column  container-md">
+            <div class="d-flex flex-column  align-items-center">
+                <h2 class="display-6 mb-5">المجالات</h2>
+
+
+                <p class="mb-5 text-center">:يمكنك من خلال هذه المنصة الإلكترونية أن تنضم إلينا عبر التسجيل في عدة مجالات أهمها</p>
+            </div>
+            <div class="row row-cols-2">
+
+                <div class="col d-flex p-4">
+                    <i class="icofont-web col-1  display-6 mx-3"></i>
+                    <div class="col-11 ">
+                        <h5 class="font-weight-bolder">تطوير المواقع الإلكترونية</h5>
+                        <p>إن تصميم موقع الكتروني لم يعد أمرا اختياريا هذه الأيام، لقد أصبح القوام الرئيسي لأي قطاع، وتطوير المواقع هو عملية تشمل عدة نواحي منها تصميم وبرمجة ونشر الويب وإدارة قواعد البيانات انتهاء بعمليات الحماية والصيانة، إذا يجب عليك إتقان
+                            عدة لغات برمجية معينة</p>
+                    </div>
+                </div>
+
+                <div class="col d-flex  p-4">
+                    <i class="icofont-presentation col-1  display-6 mx-3"></i>
+                    <div class="col-11 ">
+                        <h5 class="font-weight-bolder">إدارة إلكترونية</h5>
+                        <p>الإدارة الإلكترونية هي منظومة إلكترونية متكاملة تهدف إلى تحويل العمل الإداري العادي من إدارة يدوية إلى إدارة باستخدام الحاسب وذلك بالاعتماد على نظم معلوماتية قوية تساعد في اتخاذ القرار الإداري بأسرع وقت وبأقل التكاليف. والهدف من
+                            ذلك هو إدخال الشفافية الكاملة والمساءلة مما يؤدي إلى تنظيم وتحسين الأداء داخل القطاع
+                        </p>
+                    </div>
+                </div>
+                <div class="col d-flex p-4">
+                    <i class="icofont-computer col-1  display-6 mx-3"></i>
+                    <div class="col-11 ">
+                        <h5 class="font-weight-bolder">تطوير البرامج والتطبيقات</h5>
+                        <p>يُعرّف تطوير البرامج (Software development) بأنه عمليّة إنشاء برنامج حاسوبي لمعالجة عملية ما باستخدام لغة برمجة معيّنة، من خلال كتابة سلسلة من التعليمات البرمجية المترابطة، للقيام بالوظائف المختلفة، ويمر تطوير البرامج من عدة مراحل
+                            تؤدي إلى إنشاء البرامج في النهايةـ كما يتطلب معرفة بلغة البرمجة المعتمدة</p>
+                    </div>
+                </div>
+                <div class="col d-flex p-4">
+                    <i class="icofont-ssl-security col-1  display-6 mx-3"></i>
+                    <div class="col-11 ">
+                        <h5 class="font-weight-bolder">حماية وأمن معلوماتي</h5>
+                        <p>يُعرف أمن المعلومات بأنّه أحد فروع العلم الباحث في مجال توفير الحماية اللازمة للمعلومات ومنع الوصول إليها وهدرها من غير ذوي الصلاحية، وحمايتها من أيّ تهديد خارجي، ويشمل هذا المصطلح الأدوات والطرق والإجراءات اللازمة الواجب توفرّها
+                            لتحقيق الحماية من المخاطر التي قد تواجهها من الداخل والخارج</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+    </section>
+    <section id="portfolio" class="">
+        <div class="d-flex flex-column  container-md">
+            <div class="d-flex flex-column  align-items-center">
+                <h2 class="display-6 mb-5">من مشاريعنا</h2>
+                <p>..مشاريعنا تجسّد طموحاتنا، قد يجمعنا مشروعك، كن مساهما معنا</p>
+
+
+            </div>
+            <div class="row row-cols-2">
+
+                <div class="col d-flex p-4">
+                    <i class="icofont-web col-1  display-6 mx-3"></i>
+                    <div class="col-11 ">
+                        <h5 class="font-weight-bolder">تطوير المواقع الإلكترونية</h5>
+                        <p>إن تصميم موقع الكتروني لم يعد أمرا اختياريا هذه الأيام، لقد أصبح القوام الرئيسي لأي قطاع، وتطوير المواقع هو عملية تشمل عدة نواحي منها تصميم وبرمجة ونشر الويب وإدارة قواعد البيانات انتهاء بعمليات الحماية والصيانة، إذا يجب عليك إتقان
+                            عدة لغات برمجية معينة</p>
+                    </div>
+                </div>
+
+                <div class="col d-flex  p-4">
+                    <i class="icofont-presentation col-1  display-6 mx-3"></i>
+                    <div class="col-11 ">
+                        <h5 class="font-weight-bolder">إدارة إلكترونية</h5>
+                        <p>الإدارة الإلكترونية هي منظومة إلكترونية متكاملة تهدف إلى تحويل العمل الإداري العادي من إدارة يدوية إلى إدارة باستخدام الحاسب وذلك بالاعتماد على نظم معلوماتية قوية تساعد في اتخاذ القرار الإداري بأسرع وقت وبأقل التكاليف. والهدف من
+                            ذلك هو إدخال الشفافية الكاملة والمساءلة مما يؤدي إلى تنظيم وتحسين الأداء داخل القطاع
+                        </p>
+                    </div>
+                </div>
+                <div class="col d-flex p-4">
+                    <i class="icofont-computer col-1  display-6 mx-3"></i>
+                    <div class="col-11 ">
+                        <h5 class="font-weight-bolder">تطوير البرامج والتطبيقات</h5>
+                        <p>يُعرّف تطوير البرامج (Software development) بأنه عمليّة إنشاء برنامج حاسوبي لمعالجة عملية ما باستخدام لغة برمجة معيّنة، من خلال كتابة سلسلة من التعليمات البرمجية المترابطة، للقيام بالوظائف المختلفة، ويمر تطوير البرامج من عدة مراحل
+                            تؤدي إلى إنشاء البرامج في النهايةـ كما يتطلب معرفة بلغة البرمجة المعتمدة</p>
+                    </div>
+                </div>
+                <div class="col d-flex p-4">
+                    <i class="icofont-ssl-security col-1  display-6 mx-3"></i>
+                    <div class="col-11 ">
+                        <h5 class="font-weight-bolder">حماية وأمن معلوماتي</h5>
+                        <p>يُعرف أمن المعلومات بأنّه أحد فروع العلم الباحث في مجال توفير الحماية اللازمة للمعلومات ومنع الوصول إليها وهدرها من غير ذوي الصلاحية، وحمايتها من أيّ تهديد خارجي، ويشمل هذا المصطلح الأدوات والطرق والإجراءات اللازمة الواجب توفرّها
+                            لتحقيق الحماية من المخاطر التي قد تواجهها من الداخل والخارج</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
 
 
 

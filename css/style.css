@@ -3,6 +3,10 @@ body {
     font-family: 'Tajawal', sans-serif;
 }
 
+body {
+    position: relative;
+}
+
 .display-4,
 .display-6 {
     font-weight: 700;
@@ -137,6 +141,11 @@ body {
     left: 12%;
     transform: rotate(15deg);
     top: 17%;
+}
+
+.services h5:hover {
+    color: #01b1d7;
+    transition: all .4s;
 }
 
 @media (max-width: 576px) {
