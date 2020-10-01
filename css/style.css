@@ -148,6 +148,47 @@ body {
     transition: all .4s;
 }
 
+.img-fluid:hover {
+    transform: scale(1.1);
+    border: 0;
+    border-radius: .25rem;
+}
+
+.img-fluid {
+    transform: scale(1);
+    transition: .4s;
+    border-style: none;
+}
+
+.counts {
+    background: url("/assets/image/counter-up.webp") center center no-repeat;
+    background-size: auto;
+    background-size: cover;
+    padding: 80px 0 60px 0;
+    position: relative;
+    color: #fff;
+    z-index: -2;
+}
+
+.counts::before {
+    content: "";
+    background-color: #000000;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+[id^="count-"] {
+    color: #01b1d7;
+}
+
+.zidex-2 {}
+
 @media (max-width: 576px) {
     .m-5 {
         margin: 0 !important;

@@ -10,7 +10,29 @@ var scrollSpy = new bootstrap.ScrollSpy(document.body, {
     target: '#navbarNav',
     offset: 50
 })
+function getEventTarget(e) {
+    e = e || window.event;
 
-var scrollSpyContentEl = document.getElementById('navbarNav')
-var scrollSpy = bootstrap.ScrollSpy.getInstance(scrollSpyContentEl)
+    return e.target;
+}
 
+
+(function () {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+})()
