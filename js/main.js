@@ -72,15 +72,13 @@ let dir;
 
 function y() {
     let target1 = getEventTarget();
-    console.log(target1);
+
     const iconplus = target1.closest(".backgound-kafaa .icofont-plus");
 
     let nodes = Array.from(plus); // get array
     let index_plus = nodes.indexOf(iconplus);
     currentSlide(index_plus);
-    console.log(iconplus, index_plus);
     if (iconplus != null) {
-        console.log(iconplus);
         img01.src = iconplus.offsetParent.previousElementSibling.src;
         if (index_plus == 1) {
             img01.src = "assets/image/portfolio-3-full.webp";
@@ -101,7 +99,7 @@ const currentSlide = (n) => {
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("img-fluid");
-    console.log(slideIndex, slides);
+
     if (n >= slides.length) {
         slideIndex = 0;
     }
@@ -111,7 +109,6 @@ function showSlides(n) {
     if (slideIndex == 1) {
         img01.src = "assets/image/portfolio-3-full.webp";
     } else {
-        console.log(slideIndex);
         img01.src = slides[slideIndex].src;
     }
 }
