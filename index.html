@@ -13,14 +13,18 @@
 
 <body data-spy="scroll" data-target="#navbarNav">
     <!-- Navigation Block -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container-md container-fluid">
+
+    <nav id="navbarNav" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid container-md ">
             <a class="navbar-brand d-flex" href="#">
                 <img src="/assets/image/logo.png" alt="">
-                <h3 class=" font-weight-bold m-0">كفاءة-تك</h3>
+                <span class=" font-weight-bold m-0">كفاءة-تك</span>
             </a>
-            <div id="navbarNav" class="navbar-collapse collapse">
-                <ul class="navbar-nav">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#header">الرئيسية</a>
                     </li>
@@ -40,6 +44,7 @@
                         <a class="nav-link" href="#contact">اتصل بنا</a>
                     </li>
                 </ul>
+
             </div>
         </div>
     </nav>
